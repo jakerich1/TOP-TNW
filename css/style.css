@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding-bottom: 300px;
+}
+
+nav {
+    position: sticky;
+    background-color: white;
+    top: 0;
+    display: flex;
+    padding: 15px 25px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 48px 0px;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo svg {
+    height: 20px;
+    cursor: pointer;
+}
+
+nav .logo svg:first-child {
+    display: none;
+    cursor: pointer;
+}
+
+nav .centralNav {
+    display: flex;
+    align-items: center;
+}
+
+nav .centralNav .navItem {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    color: rgb(80, 86, 102);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+nav .centralNav .navItem span {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+nav .contact {
+    display: flex;
+    align-items: center;
+    color: rgba(80, 86, 102, 0.25);
+    cursor: pointer;
+}
+
+@media (max-width: 1025px) {
+
+    nav .logo svg {
+        fill: rgba(80, 86, 102, 0.25);
+        color: rgba(80, 86, 102, 0.25);
+    }
+
+    nav .logo svg:first-child {
+        display: block;
+        margin-right: 10px;
+    }
+
+    nav .centralNav {
+        display: none;
+    }
+
+    nav .contact {
+        display: none;
+    }
+
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    padding: 24px 32px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.hero .heroLogo {
+    max-width: 25%;
+    height: auto;
+    margin: 0 0 0 5%;
+    padding: 1em 0;
+}
+
+.hero .tagLine {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 32px;
+    font-weight: 400;
+    color: rgb(80, 86, 102);
+    line-height: 48px;
+}
+
+@media (max-width: 1025px) {
+
+    .hero {
+        display: block;
+    }
+
+    .hero .heroLogo {
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .hero .tagLine {
+        justify-content: center;
+        font-size: 18px;
+    }
+
+}
+
+.mainGrid {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 130px);
+    grid-template-areas:
+        "yt yt yt yt wa wa shift shift"
+        "yt yt yt yt wa wa shift shift"
+        "yt yt yt yt plugged plugged plugged plugged"
+        "learn learn learn learn plugged plugged plugged plugged"
+        "learn learn learn learn plugged plugged plugged plugged";
+    max-width: 1600px;
+    padding: 0 2rem;
+    margin: auto;
+}
+
+#mgc1 {
+    grid-area: yt;
+    background-color: red;
+    background: url(/assets/images/YT.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#mgc2 {
+    grid-area: wa;
+    background-color: magenta;
+    background: url(/assets/images/wa.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mgc3 {
+    grid-area: shift;
+    background-color: rgb(141, 40, 57);
+    background: url(/assets/images/cars.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mgc4 {
+    grid-area: plugged;
+    background-color: rgb(9, 17, 7);
+    background: url(/assets/images/plugged.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mgc5 {
+    grid-area: learn;
+    background-color: rgb(109, 21, 102);
+    background: rgb(219, 219, 200);
+    background: radial-gradient(circle, rgba(219, 219, 200, 1) 0%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 1) 99%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mgc5Backup {
+    display: none;
+    background-color: rgb(109, 21, 102);
+    background: rgb(219, 219, 200);
+    background: radial-gradient(circle, rgba(219, 219, 200, 1) 0%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 1) 99%);
+}
+
+.mgc5h3{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    line-height: 20px;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.gcOverlay {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 24px;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.75) 4%,
+            rgba(235, 235, 235, 0) 75%, rgba(255, 255, 255, 0) 93%);
+    color: white;
+}
+
+.gcCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+.gcOverlay button{
+    display: inline-block;
+    width: 150px;
+    background: none;
+    border: 1px solid white;
+    height: 50px;
+    border-radius: 25px;
+    color: white;
+    margin-top: 10px;
+}
+
+.gcOverlay p {
+    display: block;
+    width: 100%;
+    letter-spacing: 0.96px;
+    line-height: 12px;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.gcOverlay h3 {
+    display: block;
+    margin-bottom: 4px;
+    line-height: 25px;
+    font-size: 20px;
+    letter-spacing: -0.2px;
+}
+
+.gcOverlay .bgh3 {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+
+@media (max-width: 1025px) {
+
+    .mainGrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 200px);
+        grid-template-areas:
+            "yt yt"
+            "yt yt"
+            "wa learn"
+            "shift plugged";
+    }
+
+    .gcOverlay .bgh3 {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    .mainGrid {
+        overflow: scroll;
+        grid-template-columns: repeat(4, 90%);
+        grid-template-rows: calc(95vw - 5rem);
+        grid-template-areas: "yt wa shift plugged";
+        scroll-snap-type: x mandatory;
+        padding: 0.5rem;
+    }
+
+    .mainGridCard {
+        scroll-snap-align: center;
+    }
+
+    #mgc4 {
+        margin-right: 20px;
+    }
+
+    #mgc5 {
+        display: none;
+    }
+
+    #mgc5Backup {
+        display: block;
+        height: 200px;
+        margin: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+}

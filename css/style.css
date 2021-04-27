@@ -147,7 +147,7 @@ nav .contact {
 #mgc1 {
     grid-area: yt;
     background-color: red;
-    background: url(/images/YT.jpeg);
+    background: url(../images/YT.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -156,7 +156,7 @@ nav .contact {
 #mgc2 {
     grid-area: wa;
     background-color: magenta;
-    background: url(/images/wa.jpeg);
+    background: url(../images/wa.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -165,7 +165,7 @@ nav .contact {
 #mgc3 {
     grid-area: shift;
     background-color: rgb(141, 40, 57);
-    background: url(/images/cars.jpeg);
+    background: url(../images/cars.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -174,7 +174,7 @@ nav .contact {
 #mgc4 {
     grid-area: plugged;
     background-color: rgb(9, 17, 7);
-    background: url(/images/plugged.jpg);
+    background: url(../images/plugged.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

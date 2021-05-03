@@ -402,6 +402,10 @@ nav .contact {
     margin: auto;
 }
 
+.latest h1{
+    margin: 112px 0 64px 0;
+}
+
 .lStoryWrap{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -442,6 +446,37 @@ nav .contact {
     margin-top: 4px;
 }
 
+.latest .latestBtn{
+    display: flex;
+    justify-content: center;
+}
+
+.latest button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 12px 28px;
+    color: grey;
+    background-color: white;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 30px;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out;
+    margin: 56px 0;
+}
+
+.latest button:hover{
+    border: 1px solid rgb(145, 145, 145);
+    color: rgb(104, 104, 104);
+    transition: all 0.3s ease-in-out;
+}
+
+.latest button:hover svg{
+    margin-left: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
 @media (max-width: 1025px) {
 
     .lStoryWrap{
@@ -479,4 +514,180 @@ nav .contact {
         object-fit: cover;
     }
 
+}
+
+.explore{
+    padding: 112px 2rem 56px 2rem;
+    background-color: rgb(247, 248, 248);
+}
+
+.explore .exploreWrap{
+    margin-top: 56px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 235px;
+}
+
+.exploreCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 16px;
+    font-weight: 500;
+}
+
+.exploreCard img{
+    width: 60%;
+}
+
+.exploreCard p{
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+#excd1{
+    background: url(/images/explore/1.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#excd2{
+    background: url(/images/explore/2.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#excd3{
+    background: url(/images/explore/3.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#excd4{
+    background: url(/images/explore/4.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#excd5{
+    background: url(/images/explore/5.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 770px) {
+
+    .explore h1{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 1025px) {
+
+    .explore .exploreWrap{
+        overflow: scroll;
+        scroll-snap-type: x mandatory;
+        grid-template-columns: repeat(5, 235px);
+        padding: 0.5em;
+    }
+
+    .exploreCard{
+        scroll-snap-align: center;
+    }
+    
+}
+
+.subscribe{
+    background-image: url(/images/subscribe.webp);
+    background-size: 150% 150%;
+    background-attachment: fixed;
+    background-position: 50%;
+    padding: 64px;
+    background-color: rgb(89, 26, 148);
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.subWrap{
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.subWrap h1{
+    margin-bottom: 16px;
+}
+
+.subWrap p{
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.subINput{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.subINput input{
+    flex: 1;
+    background: none;
+    border: none;
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.subINput input:focus{
+    outline: none;
+}
+
+.subINput button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: grey;
+}
+
+.subWrap .icons svg{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.541);
+    transition: all 0.2s ease-in;
+}
+
+.subWrap .icons svg:hover{
+    color: rgb(255, 255, 255);
+    transition: all 0.2s ease-in;
+}
+
+
+
+
+.recruitWrap .top{
+    display: flex;
+}
+
+.recruitWrap .top .details{
+    flex: 1;
+}
+
+.recruitWrap .top .mediaLinks{
+    flex: 1;
+}
+
+.recruitWrap .bottom{
+    display: flex;
+    justify-content: center;
 }

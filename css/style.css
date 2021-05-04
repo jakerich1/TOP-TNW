@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-body {
-    padding-bottom: 300px;
-}
-
 nav {
     position: sticky;
     background-color: white;
@@ -551,31 +547,31 @@ nav .contact {
 }
 
 #excd1{
-    background: url(/images/explore/1.webp);
+    background: url(../images/explore/1.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #excd2{
-    background: url(/images/explore/2.jpeg);
+    background: url(../images/explore/2.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #excd3{
-    background: url(/images/explore/3.jpeg);
+    background: url(../images/explore/3.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #excd4{
-    background: url(/images/explore/4.jpeg);
+    background: url(../images/explore/4.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #excd5{
-    background: url(/images/explore/5.webp);
+    background: url(../images/explore/5.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -605,7 +601,7 @@ nav .contact {
 }
 
 .subscribe{
-    background-image: url(/images/subscribe.webp);
+    background-image: url(../images/subscribe.webp);
     background-size: 150% 150%;
     background-attachment: fixed;
     background-position: 50%;
